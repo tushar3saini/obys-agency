@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Plain Light";
     color: white;
+    cursor: none
 
 }
 
@@ -11,6 +12,20 @@ html, body{
     height: 100%;
     width: 100%;
     
+}
+
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    background-color: #343333;
+    border: 0.5px solid white;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+
+
 }
 
 #loader{
@@ -110,5 +125,60 @@ html, body{
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: #151515;
 }
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 4.5vw;
+
+}
+#nav-part2{
+display: flex;
+align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+
+}
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero{   
+       text-transform: uppercase;
+       font-size: 8vw;
+       font-weight: 600;
+       line-height: 7vw;
+       margin-left: 25%;
+       /* background-color: red; */
+       
+
+}
+
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+
+.hero:nth-child(4){
+    text-decoration: underline;
+    line-height: 7vw;
+}
+.hero h1{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+    font-weight: 600 ;
+    line-height: 7.2vw;
+}
+
+#hero3 h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+
+} 

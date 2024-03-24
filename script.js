@@ -1,5 +1,5 @@
-
-
+function loadingAnimation(){
+    
 var h5timer = document.querySelector("#line1-part1 h5")
 var grow = 0;
 
@@ -46,3 +46,35 @@ tl.from("#page1",{
 tl.to("#loader",{
     display : "none"
 })
+tl.from("#nav",{
+    opacity:0,
+    y:10,
+    stagger:0.3
+})
+tl.from(".hero h1",{
+    y:80,
+    opacity:0,
+    stagger: 0.3,
+    duration:0.4  
+})
+
+}
+
+
+
+
+function functionAnimation(){
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#crsr",{
+            left : dets.x,
+            top :  dets.y
+    
+        })
+    })
+
+    Shery.makeMagnet("#nav-part2 h4, .brand__svg",{});
+
+}
+loadingAnimation()
+
+functionAnimation()
